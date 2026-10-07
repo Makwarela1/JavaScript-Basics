@@ -37,7 +37,7 @@ onst car = {
   color: "white"
 };*/
 
-const product = [
+/*const product = [
     {name : "Laptop", model: "Dell", price: 1200, color:"white"},
     {name: "Cellphone", model: "Samsung", price: 12000, color:"black"}
 ];
@@ -45,7 +45,21 @@ function devices (product){
     // return product.name[0] + '\n' + product.price[1] + '\n' + product.color[1]
     return product[1].name + '\n'+ product[0] .model + '\n'+product[1].price;
 }
-console.log(devices(product))
+console.log(devices(product))*/
+
+const customer = {
+    name: "Makwa",
+    amount: 540,
+        products: [
+        {keyboard: 200, brand:"dell"},
+            {mouse:150, brand:"apple"}
+      ]
+}
+
+function buy (customer){
+    return (customer.amount - (customer.products[0].keyboard))*2;
+}
+console.log(buy(customer))
 
 
 
